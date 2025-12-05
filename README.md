@@ -1,56 +1,89 @@
-# Nuit de l'Info - React Glassomorphic Brutalism Prototype
+# EduSphere Frontend 🎓
 
-A high-performance, instantly themeable React prototype designed for the "Nuit de l'Info" hackathon. This starter kit combines the raw aesthetic of Neo-Brutalism with the modern feel of Glassmorphism.
+A modern, interactive educational platform built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.
 
-## 🚀 Quick Start
+This project operates as a **Static Single Page Application (SPA)** using a local **Mock Database** persisted in your browser's Local Storage. No backend server is required to run this application!
 
-1.  **Install dependencies:**
+## 🚀 Features
+
+-   **Zero-Backend Architecture:** Runs entirely in the browser using a custom `MockDB` implementation.
+-   **Local Data Persistence:** Users, Courses, and Gamification data are saved to `localStorage`.
+-   **Interactive Gamification:**
+    -   Earn XP and level up.
+    -   Unlock badges.
+    -   View global leaderboards.
+-   **Course Management:**
+    -   Create and manage courses.
+    -   View course materials and progress.
+-   **Authentication:**
+    -   Functional Login and Signup pages.
+    -   Register multiple local users.
+    -   Simulated JWT token flow.
+
+## 🛠️ Tech Stack
+
+-   **Framework:** React 19
+-   **Build Tool:** Vite
+-   **Language:** TypeScript
+-   **Styling:** Tailwind CSS (v4)
+-   **State Management:** Zustand
+-   **Routing:** React Router v7
+-   **Icons:** Lucide React
+-   **Animations:** Framer Motion
+
+## � Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/anouerchouikh-lab/front.git
+    cd front
+    ```
+
+2.  **Install dependencies:**
     ```bash
     npm install
     ```
 
-2.  **Start the dev server:**
+3.  **Run the development server:**
     ```bash
     npm run dev
     ```
 
-3.  **Build for production:**
-    ```bash
-    npm run build
-    ```
+4.  **Open in Browser:**
+    Navigate to `http://localhost:5173` (or the port shown in your terminal).
 
-## 🎨 Customization
+## 🔑 Default Credentials
 
-### Theming
-The entire design system is driven by CSS variables and a JSON configuration.
-Edit `src/config/theme.json` to instantly change the color palette and typography.
+The application comes pre-seeded with an Admin user:
+-   **Email:** `admin@edusphere.com`
+-   **Password:** `admin123`
 
-Key colors:
-- `primary`: Main brand color (borders, buttons)
-- `accent`: Highlight color (gradients, hovers)
-- `surface`: Glass background color
+You can also **Sign Up** to create new users!
 
-### Content
-- **Pages**: Located in `src/pages/`.
-- **Components**: Located in `src/components/`.
-- **Navigation**: Update `src/components/layout/Navbar.tsx`.
+## 📂 Project Structure
 
-## 🧩 Component Library
+```
+front/
+├── src/
+│   ├── components/  # Reusable UI components
+│   ├── lib/
+│   │   └── mock/    # MockDB implementation (src/lib/mock/db.ts)
+│   ├── pages/       # Application views
+│   ├── services/    # API services (pointing to MockDB)
+│   ├── store/       # Zustand state stores
+│   └── types/       # TypeScript definitions
+├── public/
+└── index.html
+```
 
-- **Button**: `variant="solid-brutal" | "glass" | "outline"`
-- **Card**: `variant="glass" | "brutal"`
-- **Input**: Styled with floating labels and validation states.
-- **Hero**: Animated landing section.
-- **CardGrid**: Responsive grid for listings.
+## 🎨 Design System
 
-## 🛠 Tech Stack
+The UI follows a modern, clean aesthetic using a "Glassmorphism" and "Neubrutalism" inspired design system with consistent tokens for spacing, typography, and colors.
 
-- **Framework**: React 18 + TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS + CSS Modules
-- **Animations**: Framer Motion
-- **State**: Zustand
-- **Icons**: Lucide React
+## 🤝 Contributing
 
-## 📱 Mobile First
-The layout is fully responsive and optimized for all device sizes.
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
