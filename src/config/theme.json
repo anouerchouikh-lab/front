@@ -1,0 +1,19 @@
+{
+    "name": "Default",
+    "colors": {
+        "primary": "#000000",
+        "secondary": "#ffffff",
+        "accent": "#ff00ff",
+        "background": "#f0f0f0",
+        "surface": "rgba(255, 255, 255, 0.4)",
+        "text": "#000000",
+        "border": "#000000"
+    },
+    "typography": {
+        "fontDisplay": "Inter, sans-serif",
+        "fontBody": "Inter, sans-serif"
+    },
+    "spacing": {
+        "container": "1280px"
+    }
+}
